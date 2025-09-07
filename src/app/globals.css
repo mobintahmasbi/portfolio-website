@@ -1,2 +1,17 @@
 @import "tailwindcss";
 
+.primary {
+    color: #FF6464;
+}
+
+.bg-primary {
+    background-color: #FF6464;
+}
+
+.secondary {
+    color: #00A8CC;
+}
+
+.bg-secondary {
+    background-color: #EDF7FA;
+}
