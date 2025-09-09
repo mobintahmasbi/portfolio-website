@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -88,7 +89,61 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="w-full mt-20 flex justify-center flex-wrap mb-5">
+          <div className="md:w-[70%] w-[95%]">
+            <h1 className="font-bold text-[24px]">پروژه های من</h1>
+          </div>
+          <article className="md:w-[70%] w-[95%] flex items-start lg:flex-no-wrap flex-wrap mt-10">
+            <div className="lg:w-[25%] w-full h-[180px] rounded-[6px] shadow-lg">
+              <Image
+                src={"/toplearn.png"}
+                height={500}
+                width={500}
+                className="w-full h-full object-fit rounded-[6px]"
+                alt="Man"
+              />
+            </div>
+            <div className="lg:mt-0 mt-5 lg:w-[75%] w-full project-detail-container">
+              <div>
+                <h1 className="font-bold text-[26px]">پروژه سروقت</h1>
+              </div>
+              <div>
+                <h3 className="text-[12px] font-bold bg-dark-blue text-white text-center py-2 rounded-[16px] w-[62px] mt-4">
+                  1404
+                </h3>
+              </div>
+              <div className="mt-4">
+                <p className="font-bold">
+                  پروژه سروقت یک پروژه برای مدیریت نوبت ها برای کسب های کار های
+                  خدماتی زمان بره که به کاربران این امکان را می دهد تا نوبت های
+                  خود را به صورت آنلاین مدیریت کنند.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
       </main>
+      <footer className="w-full flex items-center justify-center mt-20 mb-10">
+        <Link
+          href="https://x.com/MobinTahmasbi"
+          className="font-bold text-[18px] secondary cursor-pointer me-5"
+        >
+          <Image src={"/twitter.png"} width={30} height={30} alt="Twitter" />
+        </Link>
+        <Link
+          href="/"
+          className="font-bold text-[18px] secondary cursor-pointer me-5"
+        >
+          <Image src={"/linkedin.png"} width={30} height={30} alt="LinkedIn" />
+        </Link>
+        <Image src={"/instagram.png"} width={30} height={30} alt="Instagram" className="me-5" />
+        <Link
+          href="https://github.com/mobintahmasbi"
+          className="font-bold text-[18px] secondary cursor-pointer"
+        >
+          <Image src={"/github.png"} width={30} height={30} alt="GitHub" />
+        </Link>
+      </footer>
     </>
   );
 }
