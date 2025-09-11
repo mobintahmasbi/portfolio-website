@@ -20,6 +20,14 @@
     background-color: #142850;
 }
 
+hr {
+    background-color: transparent;
+}
+
+.main-border {
+    border: 0.5px solid #8d8d8d;
+}
+
 @media screen and (min-width: 1024px) {
     .project-detail-container {
         padding-right: 1.25rem;
